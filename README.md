@@ -9,7 +9,7 @@ This web app: **Evently is a sleek, user-friendly web app that helps you discove
 - Save and revisit your favorite events  
 - Get quick insights with clean visuals and a responsive interface  
 
-Time spent: **12** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
