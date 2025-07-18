@@ -1,10 +1,15 @@
-# Web Development Project 5 - *Evently*
+# Web Development Project 5 - *Evently – Your Personalized Event Dashboard*
 
 Submitted by: **Atuh Fon**
 
-This web app: **insert description**
+This web app: **Evently is a sleek, user-friendly web app that helps you discover and keep track of exciting events happening around you. Powered by the Ticketmaster API, Evently allows users to:**
 
-Time spent: **X** hours spent in total
+- Search for concerts, sports games, festivals, and more  
+- Filter events by city, date, or category  
+- Save and revisit your favorite events  
+- Get quick insights with clean visuals and a responsive interface  
+
+Time spent: **12** hours spent in total
 
 ## Required Features
 
@@ -27,31 +32,33 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types
+- [x] Multiple filters can be applied simultaneously
+- [x] Filters use different input types
   - e.g., as a text input, a dropdown or radio selection, and/or a slider
-- [ ] The user can enter specific bounds for filter values
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
+- [x] The user can enter specific bounds for filter values
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Evently.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with:
+- [EzGIF](https://ezgif.com/) for Windows
 
-## Notes
+## Challenges Encountered
 
-Describe any challenges encountered while building the app.
+1. **.env File Setup**
+   - Vite requires environment variables to start with `VITE_` to be accessible in the app. Initially, the API key didn’t load because the key was named incorrectly or not formatted properly.
+
+2. **Ticketmaster API Key Confusion**
+   - The Ticketmaster developer portal shows multiple credentials like "Consumer Key" and "Consumer Secret." It wasn’t immediately clear which one to use for API requests, which caused delays in connecting the app.
+
+3. **No Results Showing**
+   - Even after connecting the API, no events were showing. This was caused by incorrect query formatting or not handling the API response structure correctly. It required testing and checking the API’s JSON structure in the browser.
+
+4. **Restarting the Dev Server**
+   - Changes to the `.env` file weren’t taking effect until the development server was restarted. This wasn’t obvious at first and caused confusion when debugging the API key issue.
 
 ## License
 
